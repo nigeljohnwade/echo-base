@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+html, body {
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.h1,
+h1 {
+    font-size: 3.177rem;
+}
+
+.h2,
+h2 {
+    font-size: 2.618rem;
+}
+
+.h3,
+h3 {
+    font-size: 1.963rem;
+    line-height: 2.618rem;
+}
+
+.h4,
+h4 {
+    padding-top: 0.382rem;
+    font-size: 1.618rem;
+    line-height: 2.618rem;
+    font-feature-settings: "smcp";
+}
+
+.h5,
+h5 {
+    font-size: 1.214rem;
+    line-height: 1.5rem;
+    font-feature-settings: "smcp";
+}
+
+p,
+.p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+
+.bigger {
+    font-size: 1.214em;
+}
+
+.smaller {
+    font-size: .75em;
+}
+
+.tabular-numbers {
+    font-feature-settings: "tnum";
+}
+
+ul {
+    list-style-type: none;
+}
+
+img {
+    display: block;
+    object-fit: cover;
+}
+
+button,
+iframe,
+input,
+select,
+textarea {
+    border: none;
+}
+
+.full-screen{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.vignette{
+    box-shadow: 0px 0px 250px 100px inset rgba(0,0,0,0.8);
+    pointer-events: none;
+}
+

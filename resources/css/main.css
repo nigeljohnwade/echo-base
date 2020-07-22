@@ -1,4 +1,5 @@
 * {
+    position: relative;
     box-sizing: border-box;
     margin: 0;
     padding: 0;
@@ -54,17 +55,6 @@ p,
 }
 
 
-.bigger {
-    font-size: 1.214em;
-}
-
-.smaller {
-    font-size: .75em;
-}
-
-.tabular-numbers {
-    font-feature-settings: "tnum";
-}
 
 ul {
     list-style-type: none;
@@ -98,3 +88,18 @@ textarea {
     pointer-events: none;
 }
 
+.bigger {
+    font-size: 1.214em;
+}
+
+.smaller {
+    font-size: .75em;
+}
+
+.tabular-numbers {
+    font-feature-settings: "tnum";
+}
+
+.fixed{
+    position: fixed;
+}

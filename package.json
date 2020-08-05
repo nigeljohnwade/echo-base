@@ -1,0 +1,23 @@
+{
+  "name": "echo-base",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-server -p 4202 -d false",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nigeljohnwade/echo-base.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nigeljohnwade/echo-base/issues"
+  },
+  "homepage": "https://github.com/nigeljohnwade/echo-base#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}

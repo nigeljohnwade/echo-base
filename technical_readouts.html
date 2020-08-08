@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link
+        rel="preload"
         href="resources/css/main.css"
-        rel="stylesheet"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
     >
-    <link
-        href="https://vjs.zencdn.net/7.5.5/video-js.css"
-        rel="stylesheet"
-    />
+    <noscript>
+        <link rel="stylesheet" href="resources/css/main.css">
+    </noscript>
     <style>
         @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=dfd964fd-d369-437f-901b-09d31a36ba2d");
 
@@ -18,11 +19,7 @@
             font-family: "News-Gothic-Condens";
             src: url("resources/fonts/Fonts/7d700d96-7f42-4b9c-9cca-078ad6e92834.woff2") format("woff2"),
             url("resources/fonts/Fonts/8b9240f4-15ca-46ac-94fb-bc6600c1560e.woff") format("woff");
-        }
-
-        @font-face {
-            font-family: "StarJedi";
-            src: url("resources/fonts/Starjedi.ttf")
+            font-display: swap;
         }
     </style>
 
@@ -34,6 +31,7 @@
         srcset="resources/img/snow-scape.webp"
     >
     <img
+        alt=""
         class="full-screen fixed"
         src="resources/img/snow-scape@1x.jpg"
     />

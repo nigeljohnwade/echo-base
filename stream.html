@@ -4,9 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link
+        rel="preload"
         href="resources/css/main.css"
-        rel="stylesheet"
+        as="style"
+        onload="this.onload=null;this.rel='stylesheet'"
     >
+    <noscript>
+        <link rel="stylesheet" href="resources/css/main.css">
+    </noscript>
     <link
         href="https://vjs.zencdn.net/7.5.5/video-js.css"
         rel="stylesheet"
@@ -18,6 +23,7 @@
             font-family: "News-Gothic-Condens";
             src: url("resources/fonts/Fonts/7d700d96-7f42-4b9c-9cca-078ad6e92834.woff2") format("woff2"),
             url("resources/fonts/Fonts/8b9240f4-15ca-46ac-94fb-bc6600c1560e.woff") format("woff");
+            font-display: swap;
         }
     </style>
 </head>
@@ -28,6 +34,7 @@
         srcset="resources/img/snow-scape.webp"
     >
     <img
+        alt=""
         class="full-screen"
         src="resources/img/snow-scape@1x.jpg"
     />e
@@ -64,6 +71,6 @@
         <li><a href="technical_readouts.html">Technical Readouts</a></li>
     </ul>
 </nav>
-<script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </body>
+<script async src="https://vjs.zencdn.net/7.8.3/video.js"></script>
 </html>

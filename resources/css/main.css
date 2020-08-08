@@ -1,15 +1,16 @@
 @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=dfd964fd-d369-437f-901b-09d31a36ba2d");
 
-@font-face{
-    font-family:"News-Gothic-Condens";
-    src:
-            url("../fonts/Fonts/7d700d96-7f42-4b9c-9cca-078ad6e92834.woff2") format("woff2"),
-            url("../fonts/Fonts/8b9240f4-15ca-46ac-94fb-bc6600c1560e.woff") format("woff");
+@font-face {
+    font-family: "News-Gothic-Condens";
+    src: url("../fonts/Fonts/7d700d96-7f42-4b9c-9cca-078ad6e92834.woff2") format("woff2"),
+    url("../fonts/Fonts/8b9240f4-15ca-46ac-94fb-bc6600c1560e.woff") format("woff");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "StarJedi";
-    src: url("../fonts/Starjedi.ttf")
+    src: url("../fonts/Starjedi.ttf");
+    font-display: swap;
 }
 
 :root {
@@ -83,6 +84,7 @@ nav a:visited {
     border-bottom: 0 solid var(--primary-color);
     transition: border-bottom-width 150ms ease-in-out;
 }
+
 nav a:hover {
     border-bottom-width: 0.25rem;
 }
@@ -114,7 +116,7 @@ nav ul li + li:before {
     width: 1rem;
     height: 1rem;
     margin: 0.5rem;
-    border: 0.25rem solid rgb(39,224,238);
+    border: 0.25rem solid rgb(39, 224, 238);
 }
 
 img {
@@ -130,7 +132,7 @@ textarea {
     border: none;
 }
 
-.full-screen{
+.full-screen {
     position: absolute;
     top: 0;
     right: 0;
@@ -140,8 +142,8 @@ textarea {
     height: 100%;
 }
 
-.vignette{
-    box-shadow: 0px 0px 250px 100px inset rgba(0,0,0,0.8);
+.vignette {
+    box-shadow: 0px 0px 250px 100px inset rgba(0, 0, 0, 0.8);
     pointer-events: none;
 }
 
@@ -157,7 +159,7 @@ textarea {
     font-feature-settings: "tnum";
 }
 
-.fixed{
+.fixed {
     position: fixed;
 }
 
@@ -174,7 +176,7 @@ textarea {
     word-spacing: -0.3em;
 }
 
-main{
+main {
     width: 80ch;
     max-width: 80ch;
 }
@@ -185,15 +187,15 @@ hr {
     max-width: 80ch;
     margin-bottom: 2rem;
     border: none;
-    background-color: rgb(39,224,238);
+    background-color: rgb(39, 224, 238);
 }
 
-.floating-nav{
+.floating-nav {
     position: absolute;
     top: 0;
 }
 
-.video-js-container{
+.video-js-container {
     width: 100%;
     height: 100%;
     max-width: 80vw;

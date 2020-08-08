@@ -18,6 +18,7 @@
     --accent-color: rgb(232, 198, 39);
     --ink: rgb(33, 33, 33);
     --vignette: hsla(0, 0%, 0%, 0.8);
+    --vignette-image: hsla(0, 0%, 0%, 0.8);
     --transparent: hsla(0, 0%, 0%, 0);
 }
 
@@ -166,26 +167,26 @@ textarea {
 .vignette {
     box-shadow: 0px 0px 15vw 4vw inset var(--vignette);
     pointer-events: none;
-    background-image: radial-gradient(circle at center, var(--transparent) 0 , var(--transparent) 50vmin, var(--vignette) 100vmax);
-    transition: --vignette 1s;
+    background-image: radial-gradient(circle at center, var(--transparent) 0 , var(--transparent) 50vmin, var(--vignette-image) 66vmax);
+    transition: --vignette-image 2s;
 }
 
 
 @media screen and (min-width: 801px){
     .vignette{
-        --vignette: hsla(0, 0%, 0%, 0.5);
+        --vignette-image: hsla(225, 100%, 50%, 0.5);
     }
 }
 
 @media screen and (min-width: 1600px){
     .vignette{
-        --vignette: hsla(0, 0%, 0%, 0.8);
+        --vignette-image: hsla(225, 100%, 50%, 1);
     }
 }
 
 @media screen and (max-width: 800px){
     .vignette{
-        --vignette: hsla(0, 0%, 0%, 0.2);
+        --vignette-image: hsla(225, 100%, 50%, 0.2);
     }
 }
 

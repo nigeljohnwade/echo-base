@@ -170,15 +170,16 @@ textarea {
     transition: --vignette 1s;
 }
 
-@media screen and (min-width: 1600px){
-    .vignette{
-        --vignette: hsla(0, 0%, 0%, 0.8);
-    }
-}
 
 @media screen and (min-width: 801px){
     .vignette{
         --vignette: hsla(0, 0%, 0%, 0.5);
+    }
+}
+
+@media screen and (min-width: 1600px){
+    .vignette{
+        --vignette: hsla(0, 0%, 0%, 0.8);
     }
 }
 

@@ -15,6 +15,7 @@
 
 :root {
     --primary-color: rgb(39, 224, 238);
+    --primary-color-muted: rgb(20, 112, 119);
     --accent-color: rgb(232, 198, 39);
     --ink: rgb(33, 33, 33);
     --vignette: hsla(0, 0%, 0%, 0.8);
@@ -32,13 +33,13 @@
 
 html, body {
     height: 100%;
+    min-height: 100%;
 }
 
 body {
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     font-family: "News-Gothic-Condens", sans-serif;
     color: var(--primary-color);
@@ -105,14 +106,24 @@ ul {
     list-style-type: none;
 }
 
+ol {
+    list-style-type: upper-roman;
+}
+
 nav {
     max-width: 120ch;
-    width: 100%;
+    width: calc(100% - 1rem);
+    margin-left: 2rem;
+    margin-right: 2rem;
     padding: 1rem 2rem;
+    border: 0.25rem solid var(--primary-color);
+    border-top-width: 0;
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: var(--ink);
-    box-shadow: 0 0 3rem 0rem var(--vignette);
+    box-shadow: 0 0 3rem 0rem var(--vignette),
+    0 0 2rem 0rem inset var(--primary-color-muted),
+    0 0 0.5rem 0rem inset var(--primary-color);
 }
 
 nav ul {
@@ -126,7 +137,7 @@ nav ul {
 }
 
 @media screen and (max-width: 120ch) {
-    nav ul{
+    nav ul {
         font-size: 1.618rem;
     }
 }
@@ -157,25 +168,25 @@ textarea {
 .vignette {
     box-shadow: 0px 0px 15vw 4vw inset var(--vignette);
     pointer-events: none;
-    background-image: radial-gradient(circle at center, var(--transparent) 0 , var(--transparent) 50vmin, var(--vignette-image) 66vmax);
+    background-image: radial-gradient(circle at center, var(--transparent) 0, var(--transparent) 50vmin, var(--vignette-image) 66vmax);
     transition: --vignette-image 2s;
 }
 
 
-@media screen and (min-width: 801px){
-    .vignette{
+@media screen and (min-width: 801px) {
+    .vignette {
         --vignette-image: hsla(225, 100%, 50%, 0.5);
     }
 }
 
-@media screen and (min-width: 1600px){
-    .vignette{
+@media screen and (min-width: 1600px) {
+    .vignette {
         --vignette-image: hsla(225, 100%, 50%, 1);
     }
 }
 
-@media screen and (max-width: 800px){
-    .vignette{
+@media screen and (max-width: 800px) {
+    .vignette {
         --vignette-image: hsla(225, 100%, 50%, 0.2);
     }
 }
@@ -196,6 +207,26 @@ textarea {
     position: fixed;
 }
 
+.vertically-centered{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.full-width{
+    width: 100%;
+    max-width: unset;
+    min-width: unset;
+}
+
+.full-height{
+    height: 100%;
+    max-height: unset;
+    min-height: unset;
+}
+
 .logo {
     font-family: StarJedi;
     font-size: 10vmax;
@@ -213,8 +244,12 @@ textarea {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
     width: 80ch;
-    max-width: 100%;
+    max-width: calc(100% - 2rem);
+    min-height: calc(100% - 8rem);
+    padding-top: 8rem;
 }
 
 hr {
@@ -229,6 +264,7 @@ hr {
 .floating-nav {
     position: absolute;
     top: 0;
+    z-index: 1;
 }
 
 .video-js-container {

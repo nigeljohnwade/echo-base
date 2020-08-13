@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
+    <meta
+        name="viewport"
+        content="initial-scale=1"
+    >
     <title>Title</title>
     <link
         rel="preload"
@@ -11,7 +14,10 @@
         onload="this.onload=null;this.rel='stylesheet'"
     >
     <noscript>
-        <link rel="stylesheet" href="resources/css/main.css">
+        <link
+            rel="stylesheet"
+            href="resources/css/main.css"
+        >
     </noscript>
     <link
         href="https://vjs.zencdn.net/7.5.5/video-js.css"
@@ -44,7 +50,7 @@
         }
 
         @media screen and (max-width: 120ch) {
-            nav ul{
+            nav ul {
                 font-size: 1.618rem;
             }
         }
@@ -62,31 +68,6 @@
         src="resources/img/snow-scape@1x.jpg"
     />
 </picture>
-<div class="video-js-container">
-    <video
-        id="my-video"
-        class="video-js"
-        controls
-        preload="auto"
-        data-setup='{"fluid": true, "aspectRatio": "16:9"}'
-    >
-        <source
-            src="http://echobase.space/hls/test.m3u8"
-            type="application/x-mpegURL"
-        />
-        <p class="vjs-no-js">
-            To view this video please enable JavaScript, and consider upgrading to a
-            web browser that
-            <a
-                href="https://videojs.com/html5-video-support/"
-            >
-                supports HTML5 video
-            </a>
-        </p>
-    </video>
-</div>
-<div class="vignette full-screen">
-</div>
 <nav class="floating-nav">
     <ul>
         <li><a href="index.html">Home</a></li>
@@ -94,7 +75,37 @@
         <li><a href="technical_readouts.html">Technical Readouts</a></li>
     </ul>
 </nav>
+<main class="vertically-centered full-width full-height">
+    <div class="video-js-container">
+        <video
+            id="my-video"
+            class="video-js"
+            controls
+            preload="auto"
+            data-setup='{"fluid": true, "aspectRatio": "16:9"}'
+        >
+            <source
+                src="http://echobase.space/hls/test.m3u8"
+                type="application/x-mpegURL"
+            />
+            <p class="vjs-no-js">
+                To view this video please enable JavaScript, and consider upgrading to a
+                web browser that
+                <a
+                    href="https://videojs.com/html5-video-support/"
+                >
+                    supports HTML5 video
+                </a>
+            </p>
+        </video>
+    </div>
+</main>
+<div class="vignette full-screen">
+</div>
 </body>
 <script src="resources/js/main.js"></script>
-<script async src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+<script
+    async
+    src="https://vjs.zencdn.net/7.8.3/video.js"
+></script>
 </html>

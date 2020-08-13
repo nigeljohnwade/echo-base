@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="initial-scale=1">
+    <meta
+        name="viewport"
+        content="initial-scale=1"
+    >
     <title>Title</title>
     <link
         rel="preload"
@@ -11,7 +14,10 @@
         onload="this.onload=null;this.rel='stylesheet'"
     >
     <noscript>
-        <link rel="stylesheet" href="resources/css/main.css">
+        <link
+            rel="stylesheet"
+            href="resources/css/main.css"
+        >
     </noscript>
     <style>
         @import url("http://fast.fonts.net/t/1.css?apiType=css&projectid=dfd964fd-d369-437f-901b-09d31a36ba2d");
@@ -34,6 +40,22 @@
             font-size: 3.177rem;
         }
 
+        .logo {
+            font-family: StarJedi;
+            font-size: 10vmax;
+            line-height: 1;
+            color: var(--accent-color);
+            text-align: center;
+            text-shadow: rgba(0, 0, 0, 0.25) 0.25vw 0.25vw 2vw,
+            rgba(0, 0, 0, 0.25) -0.25vw -0.25vw 2vw,
+            rgba(0, 0, 0, 0.25) -0.25vw 0.25vw 2vw,
+            rgba(0, 0, 0, 0.25) 0.25vw -0.25vw 2vw,
+            rgba(0, 0, 0, 0.5) 0vw 0vw 0.25vw,
+            black 0vw 0vw 5vw;
+            word-spacing: -0.3em;
+            transition: font-size 0ms;
+        }
+
         @media screen and (max-width: 120ch) {
             h1 {
                 font-size: 2.618rem;
@@ -45,7 +67,7 @@
         }
 
         @media screen and (max-width: 120ch) {
-            nav ul{
+            nav ul {
                 font-size: 1.618rem;
             }
         }
@@ -63,9 +85,6 @@
         src="resources/img/snow-scape@1x.jpg"
     />
 </picture>
-<h1 class="logo">EcHo Base</h1>
-<div class="vignette full-screen fixed">
-</div>
 <nav class="floating-nav">
     <ul>
         <li><a href="stream.html">Stream</a></li>
@@ -73,6 +92,11 @@
         <li><a href="personnel_files.html">Personnel Files</a></li>
     </ul>
 </nav>
+<main class="vertically-centered full-width full-height">
+    <h1 class="logo">EcHo Base</h1>
+</main>
+<div class="vignette full-screen fixed">
+</div>
 <script src="resources/js/main.js"></script>
 </body>
 </html>

@@ -248,12 +248,13 @@ main {
     flex-direction: column;
     width: 80ch;
     max-width: calc(100% - 2rem);
-    min-height: calc(100% - 8rem);
-    padding-top: 8rem;
+    min-height: calc(100% - 4rem);
+    padding-top: 4rem;
 }
 
 hr {
     height: 1rem;
+    min-height: 1rem;
     width: 80ch;
     max-width: 100%;
     margin-bottom: 2rem;
@@ -262,7 +263,7 @@ hr {
 }
 
 .floating-nav {
-    position: absolute;
+    position: sticky;
     top: 0;
     z-index: 1;
 }

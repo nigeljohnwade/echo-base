@@ -274,3 +274,6 @@ hr {
     max-height: 50vw;
     margin-top: 6rem;
 }
+.video-js-container > *{
+    box-shadow: 0 0 3rem 0rem var(--vignette);
+}

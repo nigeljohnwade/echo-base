@@ -78,8 +78,20 @@
     <p>Details pertinent to the configuration of the various Echo Base technology stacks.</p>
     <h2>Server</h2>
     <ol>
-        <li><h3>AWS Lightsail</h3></li>
-        <li><h3>Bitnami AWS Node.js Stack</h3></li>
+        <li>
+            <h3>AWS Lightsail</h3>
+            <p>
+                Simple small instance of a  container based AWS EC2 instance.
+            </p>
+        </li>
+        <li>
+            <h3>Bitnami AWS Node.js Stack</h3>
+            <p>
+                Container image used for lightsail server.
+                Pre-configured with Node.js and runnning Apache as a web server.
+                Apache has been disabled in favour of running nginx as this is used for the RTMP server.
+            </p>
+        </li>
     </ol>
     <h2>RTMP</h2>
     <ol>

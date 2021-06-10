@@ -248,7 +248,7 @@ main {
     flex-direction: column;
     width: 80ch;
     max-width: calc(100% - 2rem);
-    min-height: calc(100% - 4rem);
+    min-height: calc(100% - 6rem);
     padding-top: 4rem;
 }
 

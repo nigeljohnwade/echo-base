@@ -253,7 +253,18 @@ main {
     max-width: calc(100% - 2rem);
     min-height: calc(100% - 6rem);
     padding: 4rem;
-    margin-bottom: 4rem;
+    margin-left: 1rem;
+}
+
+@media screen and (max-width: 69ch){
+    main.display-panel,
+    .expander,
+    hr{
+        width: calc(100% - 2.2rem);
+    }
+    main.dispaly-panel{
+        margin-left: 0;
+    }
 }
 main.display-panel{
     z-index: 1;

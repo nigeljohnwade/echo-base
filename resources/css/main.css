@@ -121,7 +121,7 @@ nav {
     border-bottom-left-radius: 2rem;
     border-bottom-right-radius: 2rem;
     background-color: var(--ink);
-    box-shadow: 0 0 3rem 0rem var(--vignette),
+    box-shadow: 0 0 3rem 0 var(--vignette),
     0 0 2rem 0rem inset var(--primary-color-muted),
     0 0 0.5rem 0rem inset var(--primary-color);
 }
@@ -166,7 +166,7 @@ textarea {
 }
 
 .vignette {
-    box-shadow: 0px 0px 15vw 4vw inset var(--vignette);
+    box-shadow: 0 0 15vw 4vw inset var(--vignette);
     pointer-events: none;
     background-image: radial-gradient(circle at center, var(--transparent) 0, var(--transparent) 50vmin, var(--vignette-image) 66vmax);
     transition: --vignette-image 2s;
@@ -227,8 +227,11 @@ textarea {
     min-height: unset;
 }
 
+.expander{
+    min-height: 100%;
+}
 .logo {
-    font-family: StarJedi;
+    font-family: StarJedi, sans-serif;
     font-size: 10vmax;
     line-height: 1;
     color: var(--accent-color);
@@ -237,8 +240,8 @@ textarea {
     rgba(0, 0, 0, 0.25) -0.25vw -0.25vw 2vw,
     rgba(0, 0, 0, 0.25) -0.25vw 0.25vw 2vw,
     rgba(0, 0, 0, 0.25) 0.25vw -0.25vw 2vw,
-    rgba(0, 0, 0, 0.5) 0vw 0vw 0.25vw,
-    black 0vw 0vw 5vw;
+    rgba(0, 0, 0, 0.5) 0 0 0.25vw,
+    black 0 0 5vw;
     word-spacing: -0.3em;
     transition: font-size 0ms;
 }
@@ -249,7 +252,15 @@ main {
     width: 80ch;
     max-width: calc(100% - 2rem);
     min-height: calc(100% - 6rem);
-    padding-top: 4rem;
+    padding: 4rem;
+    margin-bottom: 4rem;
+}
+main.display-panel{
+    z-index: 1;
+    background-color: hsla(0, 0%, 100%, 0.66);
+    border-bottom-left-radius: 4rem;
+    border-bottom: var(--accent-color) solid 2rem;
+    border-left: var(--accent-color) solid 0.125rem;
 }
 
 hr {
@@ -259,13 +270,13 @@ hr {
     max-width: 100%;
     margin-bottom: 2rem;
     border: none;
-    background-color: rgb(39, 224, 238);
+    background-color: var(--primary-color);
 }
 
 .floating-nav {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 2;
 }
 
 .video-js-container {
@@ -276,5 +287,5 @@ hr {
     margin-top: 6rem;
 }
 .video-js-container > *{
-    box-shadow: 0 0 3rem 0rem var(--vignette);
+    box-shadow: 0 0 3rem 0 var(--vignette);
 }

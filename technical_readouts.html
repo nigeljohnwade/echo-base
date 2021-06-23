@@ -72,48 +72,54 @@
         <li><a href="personnel_files.html">Personnel Files</a></li>
     </ul>
 </nav>
-<main>
-    <h1>Technical Readouts</h1>
-    <hr>
-    <p>Details pertinent to the configuration of the various Echo Base technology stacks.</p>
-    <h2>Server</h2>
-    <ol>
-        <li>
-            <h3>AWS Lightsail</h3>
-            <p>
-                Simple small instance of a  container based AWS EC2 instance.
-            </p>
-        </li>
-        <li>
-            <h3>Bitnami AWS Node.js Stack</h3>
-            <p>
-                Container image used for lightsail server.
-                Pre-configured with Node.js and runnning Apache as a web server.
-                Apache has been disabled in favour of running nginx as this is used for the RTMP server.
-            </p>
-        </li>
-    </ol>
-    <h2>RTMP</h2>
-    <ol>
-        <li><h3>nginx</h3>
-            <ol>
-                <p>Setup links</p>
-            </ol>
-        </li>
-        <li><h3>HLS</h3>
-            <ol>
-                <p>Setup links</p>
-            </ol>
-        </li>
-    </ol>
-    <h2>HTTP</h2>
-    <ol>
-        <li><h3>nginx</h3></li>
-    </ol>
-</main>
-<div class="vignette full-screen fixed">
-    <img src="resources/svg/Dirt-01_textures_03_by-Antipixel.svg"/>
+<div class="expander">
+    <main class="display-panel">
+        <h1>Technical Readouts</h1>
+        <hr>
+        <p>Details pertinent to the configuration of the various Echo Base technology stacks.</p>
+        <h2>Server</h2>
+        <ol>
+            <li>
+                <h3>AWS Lightsail</h3>
+                <p>
+                    Simple small instance of a container based AWS EC2 instance.
+                </p>
+            </li>
+            <li>
+                <h3>Bitnami AWS Node.js Stack</h3>
+                <p>
+                    Container image used for lightsail server.
+                    Pre-configured with Node.js and runnning Apache as a web server.
+                    Apache has been disabled in favour of running nginx as this is used for the RTMP server.
+                </p>
+            </li>
+        </ol>
+        <h2>RTMP</h2>
+        <ol>
+            <li><h3>nginx</h3>
+                <ol>
+                    <li><p>Setup links</p></li>
+                </ol>
+            </li>
+            <li><h3>HLS</h3>
+                <ol>
+                    <li>><p>Setup links</p></li>
+                </ol>
+            </li>
+        </ol>
+        <h2>HTTP</h2>
+        <ol>
+            <li><h3>nginx</h3></li>
+        </ol>
+    </main>
 </div>
+<div class="vignette full-screen fixed">
+    <img
+        class="full-screen fixed"
+        src="resources/svg/Dirt-01_textures_02_by-Antipixel.svg"
+    />
+</div>
+
 <script src="resources/js/main.js"></script>
 </body>
 </html>

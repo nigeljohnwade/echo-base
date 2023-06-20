@@ -111,7 +111,7 @@ ol {
 }
 
 nav {
-    max-width: 120ch;
+    max-width: 160ch;
     width: calc(100% - 1rem);
     margin-left: 2rem;
     margin-right: 2rem;

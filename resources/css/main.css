@@ -262,7 +262,7 @@ main {
     hr{
         width: calc(100% - 2.2rem);
     }
-    main.dispaly-panel{
+    main.display-panel{
         margin-left: 0;
     }
 }

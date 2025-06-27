@@ -110,6 +110,13 @@ ol {
     list-style-type: upper-roman;
 }
 
+ul ul,
+ul ol,
+ol ul,
+ol ol {
+    padding-left: 2rem;
+}
+
 nav {
     max-width: 160ch;
     width: calc(100% - 1rem);
@@ -187,7 +194,7 @@ textarea {
 
 @media screen and (max-width: 800px) {
     .vignette {
-        --vignette-image: hsla(225, 100%, 50%, 0.2);
+        --vignette-image: hsla(225, 100%, 20%, 0.3);
     }
 }
 
@@ -207,7 +214,7 @@ textarea {
     position: fixed;
 }
 
-.vertically-centered{
+.vertically-centered {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,21 +222,22 @@ textarea {
     padding-bottom: 0;
 }
 
-.full-width{
+.full-width {
     width: 100%;
     max-width: unset;
     min-width: unset;
 }
 
-.full-height{
+.full-height {
     height: 100%;
     max-height: unset;
     min-height: unset;
 }
 
-.expander{
+.expander {
     min-height: 100%;
 }
+
 .logo {
     font-family: StarJedi, sans-serif;
     font-size: 10vmax;
@@ -256,17 +264,19 @@ main {
     margin-left: 1rem;
 }
 
-@media screen and (max-width: 69ch){
+@media screen and (max-width: 69ch) {
     main.display-panel,
     .expander,
-    hr{
+    hr {
         width: calc(100% - 2.2rem);
     }
-    main.display-panel{
+
+    main.display-panel {
         margin-left: 0;
     }
 }
-main.display-panel{
+
+main.display-panel {
     z-index: 1;
     background-color: hsla(0, 0%, 100%, 0.66);
     border-bottom-left-radius: 4rem;
@@ -275,13 +285,25 @@ main.display-panel{
 }
 
 hr {
-    height: 1rem;
-    min-height: 1rem;
     width: 80ch;
     max-width: 100%;
-    margin-bottom: 2rem;
     border: none;
     background-color: var(--primary-color);
+}
+
+h1 + hr {
+    height: 1rem;
+    margin-bottom: 1rem;
+}
+
+h2 + hr {
+    height: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+h3 + hr {
+    height: 0.25rem;
+    margin-bottom: 0.5rem;
 }
 
 .floating-nav {
@@ -297,6 +319,7 @@ hr {
     max-height: 50vw;
     margin-top: 6rem;
 }
-.video-js-container > *{
+
+.video-js-container > * {
     box-shadow: 0 0 3rem 0 var(--vignette);
 }

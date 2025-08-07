@@ -265,8 +265,7 @@ main {
 
 @media screen and (max-width: 100ch) {
     main.display-panel,
-    .expander,
-    hr {
+    .expander {
         width: calc(100% - 2.2rem);
     }
     main.display-panel{
